@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LucasgAvila/ApiRest-Javascript/issues"
   },
-  "homepage": "https://github.com/LucasgAvila/ApiRest-Javascript#readme"
+  "homepage": "https://github.com/LucasgAvila/ApiRest-Javascript#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }

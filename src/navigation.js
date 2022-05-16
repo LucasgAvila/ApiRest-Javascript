@@ -16,20 +16,21 @@ function navigator () {
     console.log({ location })
     
     if(location.hash.startsWith('#trends')){
-        trendsPage()
+        trendsPage();
     } else if (location.hash.startsWith('#search=')){
-        searchPage()
+        searchPage();
     }
     else if (location.hash.startsWith('#movie=')){
-        movieDetailPage()
+        movieDetailPage();
     }
     else if (location.hash.startsWith('#category=')){
-        categoriesPage()
+        categoriesPage();
     } else {
-        homePage()    
+        homePage();
     }
 
-    location.hash
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 function homePage () {

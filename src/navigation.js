@@ -7,7 +7,8 @@ searchFormBtn.addEventListener('click', () => {
   });
   
   arrowBtn.addEventListener('click', () => {
-    location.hash = '#home';
+      history.back();
+    // location.hash = '#home';
   });
   
   window.addEventListener('DOMContentLoaded', navigator, false);
@@ -92,6 +93,12 @@ searchFormBtn.addEventListener('click', () => {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
+
+     // ['#movie', '545421']
+     const [_, movieId] = location.hash.split('=');
+     getMovieById(movieId);
+
+    getMovieById(id)
   }
   
   function searchPage() {
@@ -130,6 +137,10 @@ searchFormBtn.addEventListener('click', () => {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
-  }
+    
+    headerCategoryTitle.innerHTML = 'Tendencias'
+
+    getTrendingMovies()
+}
   
   

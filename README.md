@@ -1,2 +1,2 @@
 # ApiRest-Javascript
-Consumo de apiRest y armado de pagina web de peliculas.
+Consumo de apiRest en The Movie DB, armado de pagina web de peliculas.

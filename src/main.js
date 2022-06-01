@@ -37,6 +37,15 @@ function likeMovie(movie) {
 }
 
 // Utils
+let lang = navigator.languages[1];
+
+const countries = [
+  {
+  name: "usa",
+  language: "en-US",
+  flag: '🇺🇸',
+}, 
+]
 
 const lazyLoader = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -293,3 +302,4 @@ getLikedMovies = () => {
 
   createMovies(moviesArrays, likedMoviesListArticle, { lazyLoad: true, clean: true })
 }
+
